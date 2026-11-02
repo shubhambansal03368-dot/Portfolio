@@ -28,6 +28,24 @@
 </head>
 <body>
 
+  <!-- Cinematic Entry Experience (Short, non-blocking intro) -->
+  <div id="cinematic-intro" class="cinematic-intro" aria-hidden="true">
+    <div class="intro-content">
+      <div class="intro-terminal-tag">
+        <span class="intro-dot"></span>
+        <span class="intro-code">[SYSTEM_BOOT &bull; NST_CS_AI]</span>
+      </div>
+      <div class="intro-name-wrapper">
+        SHUBHAM BANSAL
+      </div>
+      <div class="intro-progress-bar">
+        <div class="intro-progress-fill"></div>
+      </div>
+      <div class="intro-status-text">INITIALIZING FOUNDATIONS &bull; 2026</div>
+      <div class="intro-skip-hint">Click anywhere or press any key to skip</div>
+    </div>
+  </div>
+
   <!-- Ambient Background Lighting & Grid -->
   <div class="bg-ambient-layer" aria-hidden="true">
     <div class="bg-radial-gradient"></div>
@@ -70,6 +88,20 @@
         </nav>
 
         <div class="nav-actions">
+          <!-- Sound Toggle Control (OFF by default) -->
+          <button id="sound-toggle-btn" class="sound-toggle-btn" aria-label="Toggle sound experience" title="Toggle Sound (OFF by default)" type="button">
+            <svg class="sound-icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+              <line x1="23" y1="9" x2="17" y2="15"/>
+              <line x1="17" y1="9" x2="23" y2="15"/>
+            </svg>
+            <svg class="sound-icon-active" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+            </svg>
+            <span class="sound-label">SOUND: <span class="sound-state-text">OFF</span></span>
+          </button>
+
           <a href="#contact" class="btn btn-primary btn-sm">
             <span>Get in Touch</span>
             <svg class="btn-icon btn-icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor">
@@ -1232,7 +1264,7 @@
             Designed and built by Shubham Bansal.
           </div>
           <div class="footer-meta" style="color: var(--text-muted); margin-top: 0.2rem; font-size: 0.76rem;">
-            Crafted with Semantic HTML5 &amp; Modern CSS (Zero JavaScript)
+            Crafted with Semantic HTML5, Modern CSS &amp; Lightweight Vanilla JS
           </div>
         </div>
 
@@ -1247,6 +1279,8 @@
 
   </div>
 
+  <!-- Lightweight Cinematic & Audio Experience Engine -->
+  <script src="script.js"></script>
 </body>
 </html>
 
